@@ -80,7 +80,7 @@
 <script>
         function myFunction(ev){
             var myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic c2hhcmF0aHBvdGxhOkFwcGlhbjEyMw==");
+myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NjkyM2NkYi02N2UwLTRjMWEtOGEyNy00MzkzZTAwMDU1ODQifQ.ilPhi8x3na-59QBlhEppZVLsojrsAyR4ZW3ebADOGk4");
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({"FirstName":document.getElementById('FirstName').value,"LastName":document.getElementById('LastName').value,"Email":document.getElementById('Email').value});
