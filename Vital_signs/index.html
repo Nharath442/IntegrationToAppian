@@ -82,7 +82,7 @@
 <script>
         function myFunction(ev){
             var myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic c2hhcmF0aC5wb3RsYUBhY2NlbnR1cmUuY29tOkJoYXJhdGgkNDQy");
+myHeaders.append("Authorization", "Basic c2hhcmF0aHBvdGxhOkFwcGlhbjEyMw==");
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({"BloodPressure":document.getElementById('BloodPressure').value,"Temperature":document.getElementById('Temperature').value,"Pulserate":document.getElementById('Pulserate').value});
@@ -96,7 +96,7 @@ var requestOptions = {
 
 var obj = "";
 
-fetch("https://accenturedev.appiancloud.com/suite/webapi/vital-signs", requestOptions)
+fetch("https://appian-dev.internal.intient.com/appian/webapi/vital-signs", requestOptions)
 
 .then(
     function(response) {
